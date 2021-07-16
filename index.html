@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS var manipulation using js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Playing with <em>css</em> variables manipulation using js</h1>
+    </header>
+
+    <div class="controls">
+        <div class="controller ">
+            <label for="img-padding">Header-Size : </label>
+            <input type="range" name="Header-Size" id="padding" max="26" min="16" value="16" step="0.2"
+                data-sizing="px">
+            <span class="display-val" id="size-value"></span>
+        </div>
+        <div class="controller blur">
+            <label for="blur">Blur Image : </label>
+            <input type="range" name="blur" id="blur" max="50" min="0" value="0" step="0.5" data-sizing="px">
+            <span class="display-val" id="blur-value"></span>
+        </div>
+        <div class="controller visibility">
+            <label for="visibility">Visibility : </label>
+            <input type="range" name="visibility" id="visibility" max="1" min="0" value="1" step="0.005">
+            <span class="display-val" id="visibility-value"></span>
+        </div>
+        <div class="controller ">
+            <label for="img-padding">Image-Background-color : </label>
+            <input type="color" name="bg-color" id="color">
+            <span class="display-val" id="bgcolor-value"></span>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="img">
+            <img src="https://i.pinimg.com/originals/eb/79/87/eb7987df6c0c3de5a3e2abafd027fe5b.jpg" alt="img">
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

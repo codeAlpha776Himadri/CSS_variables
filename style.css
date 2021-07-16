@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+:root {
+    --bg-color: white;
+    --blur: 0px;
+    --visibility: 1;
+    --Header-Size: 16px;
+}
+
+body {
+    background: linear-gradient(teal, white);
+}
+
+header {
+    height: 46px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--bg-color);
+    position: sticky;
+    font-size: var(--Header-Size);
+}
+
+.controls {
+    height: 70px;
+    width: 90vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.controls .controller {
+    height: 100px;
+    min-width: 200px;
+    margin: 48px;
+    /* border: 1px solid red; */
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2px;
+    flex-direction: column;
+    border-radius: 10px;
+    border-left: 5px solid hsl(212deg 100% 50%);
+}
+
+.display-val {
+    height: 22px;
+    width: 70px;
+    border-left: 3px solid hsl(212deg 100% 50%);
+    background-color: rgb(199, 199, 199);
+    border-radius: 4px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.main {
+    height: 400px;
+    width: 73vw;
+    margin: auto;
+    /* border: 1px solid whitesmoke; */
+    margin-top: 35px;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    border-left: 5px solid hsl(212deg 100% 50%);
+    display: flex;
+    align-items: center;
+    padding: 170px;
+    justify-content: center;
+}
+
+.main .img img {
+    height: 370px;
+    width: 66vw;
+    /* margin-top: 8px; */
+    border-radius: 8px;
+    opacity: 1;
+    filter: blur(var(--blur));
+    -webkit-filter: blur(var(--blur));
+    opacity: var(--visibility);
+}
