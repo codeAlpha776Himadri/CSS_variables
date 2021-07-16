@@ -1,4 +1,4 @@
-Day 2 project of - 30days of JS challenge
+Day 3 project of - 30days of JS challenge
 
 status - Finishing touch left
 
